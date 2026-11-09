@@ -709,7 +709,7 @@
 
 <footer>
   <p>© 2026 Informática de Transportes y Servicios, S.A.U. — All rights reserved.</p>
-  <p style="margin-top:0.5rem;"><a href="/en/privacy-policy.html">Privacy Policy</a> · <a href="/en/legal-notice.html">Legal Notice</a></p>
+  <p style="margin-top:0.5rem;"><a href="/en/privacy-policy.html">Privacy Policy</a> · <a href="/en/cookies-policy.html">Cookies Policy</a> · <a href="/en/legal-notice.html">Legal Notice</a></p>
 </footer>
 
 <script>
@@ -732,6 +732,30 @@ document.querySelectorAll('nav a[href^="#"]').forEach(a => {
     document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
   });
 });
+</script>
+
+<!-- Cookie consent banner (RGPD) -->
+<div id="cookie-banner" role="region" aria-label="Cookie notice" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:99999;background:#0B0D17;box-shadow:0 -4px 24px rgba(0,0,0,.35);padding:14px 20px;">
+  <div style="max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+    <p style="flex:1;min-width:240px;margin:0;font-size:.85rem;line-height:1.5;color:#F1F5F9;">🍪 We use exclusively technical cookies and local storage (to remember your choice about this notice). We do not use tracking, analytics or advertising cookies. <a href="/en/cookies-policy.html" style="color:#67E8F9;text-decoration:underline;">More information</a></p>
+    <div style="display:flex;gap:10px;flex-shrink:0;">
+      <button type="button" id="cookie-accept" style="background:#0891B2;color:#fff;border:none;padding:9px 20px;border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600;white-space:nowrap;">Accept</button>
+      <button type="button" id="cookie-reject" style="background:transparent;color:#94A3B8;border:1px solid rgba(148,163,184,.35);padding:9px 20px;border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600;white-space:nowrap;">Reject</button>
+    </div>
+  </div>
+</div>
+<script>
+(function () {
+  var b = document.getElementById('cookie-banner');
+  function stored(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  if (!stored('cookieConsent') && !stored('cookies_accepted')) { b.style.display = 'block'; }
+  function decide(v) {
+    try { localStorage.setItem('cookieConsent', v); } catch (e) {}
+    b.style.display = 'none';
+  }
+  document.getElementById('cookie-accept').addEventListener('click', function () { decide('accepted'); });
+  document.getElementById('cookie-reject').addEventListener('click', function () { decide('rejected'); });
+})();
 </script>
 
 </body>

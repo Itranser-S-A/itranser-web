@@ -82,6 +82,15 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://www.itranser.com/politica-cookies.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.itranser.com/politica-cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.itranser.com/en/cookies-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.itranser.com/politica-cookies.html"/>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://www.itranser.com/en/privacy-policy.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.itranser.com/politica-privacidad.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.itranser.com/en/privacy-policy.html"/>
@@ -104,6 +113,15 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.itranser.com/aviso-legal.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.itranser.com/en/legal-notice.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.itranser.com/aviso-legal.html"/>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.itranser.com/en/cookies-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.itranser.com/politica-cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.itranser.com/en/cookies-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.itranser.com/politica-cookies.html"/>
     <lastmod>2026-11-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
