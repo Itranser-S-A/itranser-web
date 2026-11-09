@@ -4,7 +4,7 @@
 
 ## Company
 
-Itranser — Informática de Transportes y Servicios, S.A.U. (Spain). Custom software development company: mobile apps (Flutter), web applications (React), cross-platform desktop apps, APIs, integrations and automation. Works end-to-end: design, development, deployment and maintenance. Website https://www.itranser.com/ (Spanish, default) and https://www.itranser.com/en/ (English). Contact: info@itranser.com.
+Itranser — Informática de Transportes y Servicios, S.A.U. (Spain). Custom software development company: mobile apps (Flutter), web applications (React), cross-platform desktop apps, APIs, integrations and automation. Works end-to-end: design, development, deployment and maintenance. Website https://www.itranser.com/ (Spanish, default) and https://www.itranser.com/en/ (English). Contact: aherranz@itranser.com.
 
 ## Product: SelfStorage (self-storage management software)
 
@@ -28,7 +28,7 @@ Data migration (completed, factual): full migration from a legacy Access / Store
 
 Technology: React, Vite, PocketBase (backend), PocketHost (hosting). Responsive web application; works on desktop, tablet and mobile browsers.
 
-Pricing: custom quotation per facility (info@itranser.com).
+Pricing: custom quotation per facility (aherranz@itranser.com).
 
 FAQ (as published on the product page):
 
@@ -77,4 +77,4 @@ Mobile app (Flutter) for Android and iOS with 8 party/drinking game modes: Turbo
 
 - SelfStorage is the flagship B2B product; the primary English keyword is "self-storage management software", in Spanish "software de gestión de trasteros / mini almacenes".
 - All product pages exist in Spanish (default) and English, linked with hreflang.
-- Itranser does not operate a public SaaS sign-up: demos and pricing are handled by email (info@itranser.com).
+- Itranser does not operate a public SaaS sign-up: demos and pricing are handled by email (aherranz@itranser.com).
