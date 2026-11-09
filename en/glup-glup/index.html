@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glup-Glup — 8 Drinking & Party Games in One App</title>
+  <meta name="description" content="8 party games in a single app: Turbo Drink, Never Have I Ever, Truth or Dare, Roulette and more. Free on Android and iOS.">
+  <meta name="keywords" content="drinking games app, party games app, truth or dare app, never have I ever app">
+  <link rel="canonical" href="https://www.itranser.com/en/glup-glup/">
+  <link rel="alternate" hreflang="es" href="https://www.itranser.com/glup-glup/">
+  <link rel="alternate" hreflang="en" href="https://www.itranser.com/en/glup-glup/">
+  <link rel="alternate" hreflang="x-default" href="https://www.itranser.com/glup-glup/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Itranser">
+  <meta property="og:title" content="Glup-Glup — 8 Drinking & Party Games in One App">
+  <meta property="og:description" content="Turbo Drink, Never Have I Ever, Truth or Dare, Roulette and more. Free on Android and iOS.">
+  <meta property="og:url" content="https://www.itranser.com/en/glup-glup/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:image" content="https://www.itranser.com/glup-glup/screenshots/glupglup-1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Glup-Glup — 8 Drinking & Party Games">
+  <meta name="twitter:description" content="Turbo Drink, Never Have I Ever, Truth or Dare and more. Free on Android and iOS.">
+  <meta name="twitter:image" content="https://www.itranser.com/glup-glup/screenshots/glupglup-1.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Glup-Glup",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Android, iOS",
+    "url": "https://www.itranser.com/en/glup-glup/",
+    "description": "Party app with 8 drinking games: Turbo Drink, Never Have I Ever, Couples, Roulette, Truth or Dare, Abusón, Most Likely To and Impostor. Built with Flutter by Itranser.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "inLanguage": "en",
+    "author": { "@type": "Organization", "name": "Itranser — Informática de Transportes y Servicios, S.A.U.", "url": "https://www.itranser.com/" }
+  }
+  </script>
+  <style>
+    :root {
+      --purple: #7C3AED;
+      --purple-dark: #4C1D95;
+      --pink: #EC4899;
+      --amber: #F59E0B;
+      --bg: #0A0A1A;
+      --card: #13132A;
+      --text: #F0E8FF;
+      --muted: #9890B8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* Nav */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      background: rgba(10,10,26,0.9);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(124,58,237,0.2);
+      padding: 1rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    nav .logo {
+      font-size: 1.5rem; font-weight: 900;
+      background: linear-gradient(135deg, var(--pink), var(--purple));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    nav .nav-right { display: flex; align-items: center; gap: 1rem; }
+    nav .nav-right a { color: var(--muted); text-decoration: none; transition: color 0.3s; }
+    nav .nav-right a:hover { color: #fff; }
+    nav .lang-switch {
+      display: inline-flex; align-items: center;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(124,58,237,0.35);
+      border-radius: 999px; overflow: hidden;
+      font-size: 0.75rem; font-weight: 700;
+    }
+    nav .lang-switch span, nav .lang-switch a { padding: 0.22rem 0.7rem; letter-spacing: 0.5px; }
+    nav .lang-switch span { color: #C4B5FD; background: rgba(124,58,237,0.3); }
+    nav .lang-switch a { color: var(--muted); text-decoration: none; transition: color 0.2s, background 0.2s; }
+    nav .lang-switch a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center;
+      padding: 8rem 2rem 4rem;
+      background: radial-gradient(ellipse at 50% 40%, rgba(124,58,237,0.2) 0%, transparent 60%),
+                  radial-gradient(ellipse at 30% 70%, rgba(236,72,153,0.1) 0%, transparent 50%);
+    }
+    .hero .emoji { font-size: 5rem; margin-bottom: 1.5rem; }
+    .hero h1 {
+      font-size: clamp(3rem, 8vw, 5rem);
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--purple), var(--pink), var(--amber));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+    .hero .tagline {
+      font-size: 1.3rem; color: var(--muted);
+      max-width: 500px; margin-bottom: 2.5rem;
+    }
+    .hero .download {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      color: #fff; text-decoration: none;
+      padding: 1rem 2.5rem;
+      border-radius: 16px; font-weight: 700; font-size: 1.1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .hero .download:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 40px rgba(124,58,237,0.4);
+    }
+    .hero .platforms {
+      margin-top: 1.5rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+
+    /* Games */
+    .games {
+      padding: 6rem 2rem;
+      max-width: 900px; margin: 0 auto;
+    }
+    .games h2 {
+      text-align: center; font-size: 2rem; margin-bottom: 3rem;
+    }
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.25rem;
+    }
+    .game-card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    .game-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(124,58,237,0.3);
+    }
+    .game-card .g-emoji { font-size: 2rem; margin-bottom: 0.75rem; }
+    .game-card h3 { font-size: 1rem; margin-bottom: 0.3rem; }
+    .game-card p { color: var(--muted); font-size: 0.8rem; }
+
+    /* Showcase with perspective */
+    .showcase {
+      padding: 4rem 2rem 6rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .showcase h2 {
+      text-align: center; font-size: 2rem; margin-bottom: 3rem;
+    }
+    .showcase-row {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      margin-bottom: 5rem;
+    }
+    .showcase-row.reverse { flex-direction: row-reverse; }
+    .showcase-text { flex: 1; }
+    .showcase-text .g-emoji { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .showcase-text h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .showcase-text p { color: var(--muted); line-height: 1.7; }
+    .showcase-img {
+      flex: 1;
+      max-width: 320px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.4), 0 0 60px rgba(124,58,237,0.15);
+      border: 1px solid rgba(255,255,255,0.12);
+      transform: perspective(1500px) rotateY(-60deg) rotateX(5deg);
+      transition: transform 0.6s ease-out, box-shadow 0.4s;
+    }
+    .showcase-img:hover,
+    .showcase-img.straight {
+      box-shadow: 0 16px 48px rgba(0,0,0,0.3), 0 0 40px rgba(124,58,237,0.1);
+      transform: perspective(1500px) rotateY(0deg) rotateX(0deg);
+    }
+    .showcase-img img {
+      width: 100%; display: block;
+    }
+
+    /* Reveal animations */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 768px) {
+      .showcase-row, .showcase-row.reverse { flex-direction: column; text-align: center; }
+      .showcase-img { max-width: 280px; margin: 0 auto; }
+    }
+
+    /* CTA */
+    .cta {
+      padding: 6rem 2rem;
+      text-align: center;
+      background: radial-gradient(ellipse at 50% 50%, rgba(236,72,153,0.1) 0%, transparent 60%);
+    }
+    .cta h2 { font-size: 2rem; margin-bottom: 1rem; }
+    .cta p { color: var(--muted); margin-bottom: 2rem; }
+    .cta .download {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      background: linear-gradient(135deg, var(--pink), var(--amber));
+      color: #fff; text-decoration: none;
+      padding: 1rem 2.5rem;
+      border-radius: 16px; font-weight: 700; font-size: 1.1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .cta .download:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 40px rgba(236,72,153,0.4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+    footer a { color: var(--purple); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .games-grid { grid-template-columns: repeat(2, 1fr); }
+      nav { padding: 0.9rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">GLUP-GLUP</div>
+  <div class="nav-right">
+    <a href="/en/">← Itranser</a>
+    <div class="lang-switch" aria-label="Language">
+      <a href="/glup-glup/" hreflang="es" lang="es" rel="alternate">ES</a>
+      <span aria-current="true">EN</span>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="emoji">🍻</div>
+  <h1>Glup-Glup</h1>
+  <p class="tagline">8 drinking and party games in a single app. Fun guaranteed!</p>
+  <a href="https://onelink.to/btetzg" class="download">⬇ Download Free</a>
+  <p class="platforms">Available on Android and iOS</p>
+</section>
+
+<section class="games">
+  <h2>8 Game Modes</h2>
+  <div class="games-grid">
+    <div class="game-card">
+      <div class="g-emoji">⚡</div>
+      <h3>Turbo Drink</h3>
+      <p>Fast and direct</p>
+    </div>
+    <div class="game-card">
+      <div class="g-emoji">🤫</div>
+      <h3>Never Have I Ever</h3>
+      <p>Wild confessions</p>
+    </div>
+    <div class="game-card">
+      <div class="g-emoji">💑</div>
+      <h3>Couples</h3>
+      <p>For two</p>
+    </div>
+    <div class="game-card">
+      <div class="g-emoji">🎡</div>
+      <h3>Roulette</h3>
+      <p>Random and crazy</p>
+    </div>
+    <div class="game-card">
+      <div class="g-emoji">🔥</div>
+      <h3>Truth or Dare</h3>
+      <p>The intense classic</p>
+    </div>
+    <div class="game-card">
+      <div class="g-emoji">😈</div>
+      <h3>Abusón</h3>
+      <p>The boldest one</p>
+    </div>
+    <div class="game-card">
+      <div class="g-emoji">🤔</div>
+      <h3>Most Likely To</h3>
+      <p>Point at the culprit</p>
+    </div>
+    <div class="game-card">
+      <div class="g-emoji">🕵️</div>
+      <h3>Impostor</h3>
+      <p>Find the traitor</p>
+    </div>
+  </div>
+</section>
+
+<section class="showcase">
+  <h2>This is what the party looks like</h2>
+
+  <div class="showcase-row reveal">
+    <div class="showcase-text">
+      <div class="g-emoji">⚡</div>
+      <h3>Turbo Drink</h3>
+      <p>Quick rounds of "drink" and "pass". No pause, no mercy. The most frantic mode to kick off the night!</p>
+    </div>
+    <div class="showcase-img">
+      <img src="/glup-glup/screenshots/glupglup-1.jpg" alt="Turbo Drink game screen in Glup-Glup" loading="lazy">
+    </div>
+  </div>
+
+  <div class="showcase-row reverse reveal">
+    <div class="showcase-text">
+      <div class="g-emoji">🤫</div>
+      <h3>Never Have I Ever & Truth or Dare</h3>
+      <p>Confessions you didn't see coming and dares you didn't think you'd accept. The classic mode, reinvented.</p>
+    </div>
+    <div class="showcase-img">
+      <img src="/glup-glup/screenshots/glupglup-2.jpg" alt="Never Have I Ever game screen in Glup-Glup" loading="lazy">
+    </div>
+  </div>
+
+  <div class="showcase-row reveal">
+    <div class="showcase-text">
+      <div class="g-emoji">💑</div>
+      <h3>Couples Mode</h3>
+      <p>Designed for two. Intimate dares and bold questions to connect in a different way.</p>
+    </div>
+    <div class="showcase-img">
+      <img src="/glup-glup/screenshots/glupglup-3.jpg" alt="Couples mode game screen in Glup-Glup" loading="lazy">
+    </div>
+  </div>
+
+  <div class="showcase-row reverse reveal">
+    <div class="showcase-text">
+      <div class="g-emoji">🎡</div>
+      <h3>Roulette & Abusón</h3>
+      <p>Random and merciless. The roulette decides who drinks, and Abusón sets the rules.</p>
+    </div>
+    <div class="showcase-img">
+      <img src="/glup-glup/screenshots/glupglup-4.jpg" alt="Roulette game screen in Glup-Glup" loading="lazy">
+    </div>
+  </div>
+
+  <div class="showcase-row reveal">
+    <div class="showcase-text">
+      <div class="g-emoji">🕵️</div>
+      <h3>Impostor & Most Likely To</h3>
+      <p>Point, suspect and uncover the traitor among you. Fun guaranteed.</p>
+    </div>
+    <div class="showcase-img">
+      <img src="/glup-glup/screenshots/glupglup-5.jpg" alt="Impostor game screen in Glup-Glup" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Ready to party?</h2>
+  <p>Download Glup-Glup and let the fun begin</p>
+  <a href="https://onelink.to/btetzg" class="download">⬇ Download Now</a>
+</section>
+
+<script>
+// Reveal on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Perspective straight-on-scroll
+const tiltObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('straight'); tiltObserver.unobserve(e.target); }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.showcase-img').forEach(img => tiltObserver.observe(img));
+</script>
+
+<footer>
+  <p>Glup-Glup by <a href="/en/">Itranser</a> — Informática de Transportes y Servicios, S.A.U.</p>
+</footer>
+
+</body>
+</html>

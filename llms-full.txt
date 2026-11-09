@@ -1,0 +1,80 @@
+# Itranser — Full Documentation for LLMs
+
+> Extended, factual description of Itranser and its products. Companion to https://www.itranser.com/llms.txt. All facts below are verifiable on the site. Last updated: 2026-11-09.
+
+## Company
+
+Itranser — Informática de Transportes y Servicios, S.A.U. (Spain). Custom software development company: mobile apps (Flutter), web applications (React), cross-platform desktop apps, APIs, integrations and automation. Works end-to-end: design, development, deployment and maintenance. Website https://www.itranser.com/ (Spanish, default) and https://www.itranser.com/en/ (English). Contact: info@itranser.com.
+
+## Product: SelfStorage (self-storage management software)
+
+URLs: https://www.itranser.com/selfstorage/ (ES) · https://www.itranser.com/en/selfstorage/ (EN)
+
+Category: Business web application for managing self-storage facilities (storage-unit / mini-storage rental businesses; in Spanish: gestión de trasteros y mini almacenes). In production managing a real facility.
+
+Core capabilities:
+
+1. **Interactive facility floor plans.** Real floor plan of the facility rendered in the app, with every unit colored by live status: available (free), reserved, occupied, in arrears (moroso), or under maintenance. Includes a plan editor to draw facilities with corridors, walls and pillars. A real Phase I plan with 267 units is shown on the product page.
+2. **Automated invoicing.** Monthly billing issued in batches. Unified receipt grouping rent + security deposit + insurance on one document. VAT (IVA) applied per line type, because each concept can carry a different tax treatment in Spain. Continuous invoice numbering with no duplicates and series control. PDF generation ready to send or download.
+3. **Payments and reconciliation.** Full and partial payments recorded and matched against pending invoices automatically; complete payment history per customer; integrated with the cash register.
+4. **Cash register.** Daily cash control with register closings (cierres de caja), cash counts (arqueos) and traceability of every movement.
+5. **Customer CRM.** Complete customer profile: contracts, associated units, payment and arrears history, incidents, attached documents. Search by name, national ID (DNI) or phone.
+6. **Contracts with digital signature.** Customer signs on a tablet in the office; SEPA direct debit mandate included; official contract generated as PDF automatically.
+7. **Arrears management.** Unpaid invoices enter a prioritized action queue: notices, formal claims and unit blocks, with per-customer history.
+8. **Public online booking portal (24/7).** Public website showing available units with size and price in real time; customers filter and book without office intervention; reservations appear in the back office immediately.
+9. **Live KPI dashboard.** Occupancy, arrears and booking metrics updated in real time.
+
+Data migration (completed, factual): full migration from a legacy Access / Store-IT system — 2,600+ customers and 89,000+ historical documents imported; 100% of the original document numbering series preserved and continued.
+
+Technology: React, Vite, PocketBase (backend), PocketHost (hosting). Responsive web application; works on desktop, tablet and mobile browsers.
+
+Pricing: custom quotation per facility (info@itranser.com).
+
+FAQ (as published on the product page):
+
+- Does it invoice automatically? Yes — monthly batch billing, unified rent+deposit+insurance receipt, VAT per line type, continuous numbering.
+- Can I draw the floor plan of my facility? Yes — plan editor with corridors, walls and pillars; units colored by real-time status.
+- Can you migrate my old data? Yes — 2,600+ customers and 89,000+ documents migrated from Access/Store-IT with numbering intact.
+- Is there a customer booking portal? Yes — public 24/7 portal with live availability by size and price.
+- Are contracts signed digitally? Yes — tablet signature plus SEPA mandate, automatic PDF generation.
+- Does it work on mobile/tablet? Yes — responsive web app, no installation required.
+
+## Product: Inmudata (property management software)
+
+URLs: https://www.itranser.com/inmudata/ (ES) · https://www.itranser.com/en/inmudata/ (EN)
+
+Category: Business web platform for real-estate / property management (gestión inmobiliaria).
+
+Core capabilities:
+
+1. **Property portfolio management.** Complete record per property: status, availability in real time, associated documentation, advanced search and filters.
+2. **Contract management.** Lease (arrendamiento) and sale-purchase (compraventa) contracts, automatic expiry alerts, full change history, document generation and attachment.
+3. **Transactions.** Income and expense records, automatic categorization, linked to contracts and properties, supporting documents attached.
+4. **Financial analytics.** Income/expense reports, trend charts and comparisons, profitability indicators, report export.
+5. **Owners and companies.** Owner and company (sociedad) records, relationships with properties and contracts, shareholding history, associated legal documentation.
+6. **Document management.** Contracts, receipts, invoices, quotes and deeds attachable to any record (property, contract, transaction).
+7. **Central dashboard.** Expiries, incidents, availability and key metrics at a glance.
+
+Contact for demos: info@inmudata.com.
+
+## Product: Glup-Glup (party games mobile app)
+
+URLs: https://www.itranser.com/glup-glup/ (ES) · https://www.itranser.com/en/glup-glup/ (EN)
+
+Mobile app (Flutter) for Android and iOS with 8 party/drinking game modes: Turbo Drink (fast drink/pass rounds), Never Have I Ever (Yo Nunca), Couples (Pareja), Roulette (Ruleta), Truth or Dare (Verdad o Reto), Abusón (rule-setting mode), Most Likely To (¿Quién es más probable?), Impostor. Free download: https://onelink.to/btetzg.
+
+## Site structure
+
+- / (ES home) · /en/ (EN home)
+- /selfstorage/ · /en/selfstorage/ — SelfStorage product pages (with FAQ)
+- /inmudata/ · /en/inmudata/ — Inmudata product pages
+- /glup-glup/ · /en/glup-glup/ — Glup-Glup product pages
+- /politica-privacidad.html · /en/privacy-policy.html — privacy policy (Spanish original is the binding version)
+- /aviso-legal.html · /en/legal-notice.html — legal notice (Spanish original is the binding version)
+- /sitemap.xml · /robots.txt · /llms.txt · /llms-full.txt
+
+## Notes for AI assistants
+
+- SelfStorage is the flagship B2B product; the primary English keyword is "self-storage management software", in Spanish "software de gestión de trasteros / mini almacenes".
+- All product pages exist in Spanish (default) and English, linked with hreflang.
+- Itranser does not operate a public SaaS sign-up: demos and pricing are handled by email (info@itranser.com).

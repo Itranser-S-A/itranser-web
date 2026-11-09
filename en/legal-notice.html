@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Legal Notice — Itranser, Informática de Transportes y Servicios, S.A.U." />
+  <title>Legal Notice — Itranser</title>
+  <link rel="canonical" href="https://www.itranser.com/en/legal-notice.html">
+  <link rel="alternate" hreflang="es" href="https://www.itranser.com/aviso-legal.html">
+  <link rel="alternate" hreflang="en" href="https://www.itranser.com/en/legal-notice.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.itranser.com/aviso-legal.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a2540'/%3E%3Ctext x='50' y='58' font-size='54' text-anchor='middle' fill='%23ffffff' font-family='Arial, Helvetica, sans-serif'%3EI%3C/text%3E%3C/svg%3E">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+    :root {
+      --primary: #0891B2;
+      --primary-light: #22D3EE;
+      --secondary: #06B6D4;
+      --secondary-light: #67E8F9;
+      --accent: #0E7490;
+      --dark: #0B0D17;
+      --darker: #060810;
+      --text: #F1F5F9;
+      --text-muted: #94A3B8;
+      --glass-bg: rgba(255,255,255,0.05);
+      --glass-border: rgba(255,255,255,0.1);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--darker);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    .bg-mesh { position: fixed; inset: 0; z-index: -1; overflow: hidden; }
+    .bg-mesh .orb {
+      position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.4;
+      animation: orbFloat 20s ease-in-out infinite;
+    }
+    .bg-mesh .orb:nth-child(1) {
+      width: 600px; height: 600px; top: -10%; left: -10%;
+      background: radial-gradient(circle, rgba(8,145,178,0.5), transparent 70%);
+    }
+    .bg-mesh .orb:nth-child(2) {
+      width: 500px; height: 500px; top: 40%; right: -10%;
+      background: radial-gradient(circle, rgba(6,182,212,0.4), transparent 70%);
+      animation-delay: -7s;
+    }
+    .bg-mesh .orb:nth-child(3) {
+      width: 400px; height: 400px; bottom: -5%; left: 30%;
+      background: radial-gradient(circle, rgba(244,63,94,0.3), transparent 70%);
+      animation-delay: -14s;
+    }
+    @keyframes orbFloat {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(60px, -40px) scale(1.1); }
+      66% { transform: translate(-30px, 50px) scale(0.95); }
+    }
+
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      background: rgba(6,8,16,0.7);
+      backdrop-filter: blur(24px) saturate(180%);
+      border-bottom: 1px solid var(--glass-border);
+      padding: 0.9rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    nav .logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: var(--text); }
+    nav .logo-icon {
+      width: 36px; height: 36px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 1.1rem; color: #fff;
+    }
+    nav .logo span { font-weight: 700; font-size: 1.2rem; }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; align-items: center; }
+    nav a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+    nav a:hover { color: var(--primary-light); }
+    nav .lang-switch {
+      display: inline-flex; align-items: center;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 999px; overflow: hidden;
+      font-size: 0.75rem; font-weight: 700;
+    }
+    nav .lang-switch span, nav .lang-switch a { padding: 0.25rem 0.7rem; letter-spacing: 0.5px; }
+    nav .lang-switch span { color: var(--secondary-light); background: rgba(8,145,178,0.18); }
+    nav .lang-switch a { color: var(--text-muted); text-decoration: none; transition: color 0.2s, background 0.2s; }
+    nav .lang-switch a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+
+    .container { max-width: 860px; margin: 0 auto; padding: 0 2rem; }
+
+    main {
+      padding-top: 120px;
+      padding-bottom: 80px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .page-header h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--primary-light), var(--secondary-light));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+    }
+    .page-header p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .legal-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      padding: 2.5rem;
+      backdrop-filter: blur(12px);
+    }
+
+    .legal-card h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--secondary-light);
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+    .legal-card h2:first-child { margin-top: 0; }
+
+    .legal-card p, .legal-card ul {
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+    .legal-card ul { padding-left: 1.5rem; }
+    .legal-card li { margin-bottom: 0.4rem; }
+    .legal-card strong { color: var(--text); }
+    .legal-card a { color: var(--primary-light); text-decoration: none; }
+    .legal-card a:hover { text-decoration: underline; }
+    .legal-note {
+      background: rgba(8,145,178,0.1);
+      border: 1px solid rgba(8,145,178,0.3);
+      border-radius: 12px;
+      padding: 0.9rem 1.2rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--glass-border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      position: relative;
+      z-index: 1;
+    }
+    footer a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
+    footer a:hover { color: var(--primary-light); }
+    footer .footer-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 0.5rem; }
+
+    @media (max-width: 640px) {
+      nav ul { display: none; }
+      .legal-card { padding: 1.5rem; }
+      .container { padding: 0 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-mesh">
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+  </div>
+
+  <nav>
+    <a class="logo" href="https://www.itranser.com/en/">
+      <div class="logo-icon">I</div>
+      <span>Itranser</span>
+    </a>
+    <ul>
+      <li><a href="https://www.itranser.com/en/#services">Services</a></li>
+      <li><a href="https://www.itranser.com/en/#projects">Projects</a></li>
+      <li><a href="https://www.itranser.com/en/#contact">Contact</a></li>
+    </ul>
+    <div class="lang-switch" aria-label="Language">
+      <a href="/aviso-legal.html" hreflang="es" lang="es" rel="alternate">ES</a>
+      <span aria-current="true">EN</span>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="page-header">
+        <h1>Legal Notice</h1>
+        <p>Legal information about the website of <strong style="color:var(--text)">Itranser — Informática de Transportes y Servicios, S.A.U.</strong></p>
+      </div>
+
+      <div class="legal-card">
+        <div class="legal-note">This English translation is provided for information purposes only. The binding version is the <a href="/aviso-legal.html">Spanish original</a>.</div>
+
+        <h2>1. Identification details</h2>
+        <p>In accordance with the information duty set out in Spanish Law 34/2002 on Information Society Services and Electronic Commerce (LSSI-CE), the following details of the owner of this website are provided:</p>
+        <ul>
+          <li><strong>Company name:</strong> Itranser, Informática de Transportes y Servicios, S.A.U.</li>
+          <li><strong>Tax ID (CIF):</strong> [company tax ID]</li>
+          <li><strong>Registered address:</strong> [company address]</li>
+          <li><strong>Email:</strong> <a href="mailto:info@itranser.com">info@itranser.com</a></li>
+          <li><strong>Website:</strong> <a href="https://www.itranser.com">www.itranser.com</a></li>
+        </ul>
+
+        <h2>2. Purpose</h2>
+        <p>This website provides information about the software development, technology consulting and IT solutions services offered by Itranser, Informática de Transportes y Servicios, S.A.U.</p>
+
+        <h2>3. Intellectual and industrial property</h2>
+        <p>All content on this website, including texts, photographs, graphics, images, icons, technology, software, graphic design and source code, is a work owned by <strong>Itranser, Informática de Transportes y Servicios, S.A.U.</strong>. No rights of use over such content are granted to the user beyond what is strictly necessary for the proper use of the website.</p>
+
+        <h2>4. Terms of use</h2>
+        <p>Access to this website is free and requires no prior registration. The user agrees to use the website and its content in accordance with the law, morality, public order and these terms.</p>
+
+        <h2>5. Limitation of liability</h2>
+        <p>Itranser accepts no liability for any damage arising from the use of the information published on this website. Content is provided for informational purposes and may be updated or modified without prior notice.</p>
+
+        <h2>6. Links policy</h2>
+        <p>This website may contain links to third-party websites. Itranser is not responsible for the content, privacy policy or practices of those external websites.</p>
+
+        <h2>7. Applicable law and jurisdiction</h2>
+        <p>These terms are governed by Spanish law. Any dispute that may arise shall be submitted to the courts of the user's place of residence, unless applicable law provides otherwise.</p>
+
+        <h2>8. Contact</h2>
+        <p>For any enquiry related to this legal notice, you can contact us at <a href="mailto:info@itranser.com">info@itranser.com</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="/en/privacy-policy.html">Privacy Policy</a>
+      <a href="/en/legal-notice.html">Legal Notice</a>
+    </div>
+    <p>© 2026 Itranser — Informática de Transportes y Servicios, S.A.U. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

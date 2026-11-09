@@ -1,0 +1,31 @@
+# Itranser
+
+> Itranser (Informática de Transportes y Servicios, S.A.U.) is a Spanish custom software development company. It builds and operates business web applications, mobile apps and desktop software, end-to-end: design, development, deployment and maintenance. Website: https://www.itranser.com/ (English version: https://www.itranser.com/en/). Contact: info@itranser.com.
+
+## Products
+
+- [SelfStorage — self-storage management software](https://www.itranser.com/selfstorage/) ([English](https://www.itranser.com/en/selfstorage/)): Complete management platform for self-storage / mini storage facilities (storage units rental). Interactive facility floor plans with real-time unit status and a built-in plan editor, automated monthly invoicing (unified rent + deposit + insurance receipt with VAT per line type), payment collection and reconciliation, cash register with daily closings, customer CRM, contracts signed on tablet with SEPA direct debit mandate, arrears (non-payment) action queue, and a public 24/7 online booking portal. In production managing a real facility (Phase I: 267 units). Full legacy data migration completed: 2,600+ customers and 89,000+ historical documents imported from Access / Store-IT with original document numbering intact.
+- [Inmudata — property management software](https://www.itranser.com/inmudata/) ([English](https://www.itranser.com/en/inmudata/)): Property management platform for real estate professionals. Property portfolio with live status, lease and sale contracts with automatic expiry alerts, income/expense transactions linked to properties, financial analytics with reports and profitability indicators, owners and companies with shareholding history, and document management (contracts, receipts, invoices, deeds) attached to any record. Contact: info@inmudata.com.
+- [Glup-Glup — party games mobile app](https://www.itranser.com/glup-glup/) ([English](https://www.itranser.com/en/glup-glup/)): Mobile app (Flutter) with 8 party games: Turbo Drink, Never Have I Ever, Couples, Roulette, Truth or Dare, Abusón, Most Likely To and Impostor. Free on Android and iOS (https://onelink.to/btetzg).
+
+## Services
+
+Custom software development: mobile apps (Flutter, iOS/Android), web applications (React SPAs/PWAs, dashboards, platforms), cross-platform desktop apps, and bespoke solutions (APIs, integrations, automation, tailored architectures).
+
+## Technology stack
+
+Flutter, React, Node.js, PocketBase, TypeScript, HTML/CSS, MySQL, SQLite, Figma, Git, Docker, Linux. SelfStorage additionally uses Vite and PocketHost hosting.
+
+## Pages
+
+- [Home (Spanish)](https://www.itranser.com/) · [Home (English)](https://www.itranser.com/en/)
+- [SelfStorage (Spanish)](https://www.itranser.com/selfstorage/) · [SelfStorage (English)](https://www.itranser.com/en/selfstorage/)
+- [Inmudata (Spanish)](https://www.itranser.com/inmudata/) · [Inmudata (English)](https://www.itranser.com/en/inmudata/)
+- [Glup-Glup (Spanish)](https://www.itranser.com/glup-glup/) · [Glup-Glup (English)](https://www.itranser.com/en/glup-glup/)
+- [Privacy Policy (Spanish)](https://www.itranser.com/politica-privacidad.html) · [Privacy Policy (English)](https://www.itranser.com/en/privacy-policy.html)
+- [Legal Notice (Spanish)](https://www.itranser.com/aviso-legal.html) · [Legal Notice (English)](https://www.itranser.com/en/legal-notice.html)
+
+## Optional
+
+- [Extended product details (llms-full.txt)](https://www.itranser.com/llms-full.txt): detailed feature breakdown per product, migration facts and FAQ.
+- [Sitemap](https://www.itranser.com/sitemap.xml)

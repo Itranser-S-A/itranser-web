@@ -3,8 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Inmudata — Gestión Inmobiliaria Inteligente</title>
+<title>Inmudata — Software de gestión inmobiliaria · Itranser</title>
 <meta name="description" content="Plataforma integral de gestión inmobiliaria. Controla inmuebles, contratos, transacciones y finanzas desde un solo lugar.">
+<meta name="keywords" content="gestión inmobiliaria, property management software, software inmobiliario, gestión de contratos de arrendamiento, CRM inmobiliario">
+<link rel="canonical" href="https://www.itranser.com/inmudata/">
+<link rel="alternate" hreflang="es" href="https://www.itranser.com/inmudata/">
+<link rel="alternate" hreflang="en" href="https://www.itranser.com/en/inmudata/">
+<link rel="alternate" hreflang="x-default" href="https://www.itranser.com/inmudata/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Itranser">
+<meta property="og:title" content="Inmudata — Software de gestión inmobiliaria">
+<meta property="og:description" content="Inmuebles, contratos, transacciones y finanzas en una plataforma diseñada para profesionales inmobiliarios.">
+<meta property="og:url" content="https://www.itranser.com/inmudata/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="https://www.itranser.com/inmudata/2026-04-16_inmudata-dashboard.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Inmudata — Software de gestión inmobiliaria">
+<meta name="twitter:description" content="Inmuebles, contratos, transacciones y finanzas en una sola plataforma para profesionales inmobiliarios.">
+<meta name="twitter:image" content="https://www.itranser.com/inmudata/2026-04-16_inmudata-dashboard.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Inmudata de Itranser",
+  "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "Software de gestión inmobiliaria",
+  "operatingSystem": "Navegador web",
+  "url": "https://www.itranser.com/inmudata/",
+  "description": "Plataforma de gestión inmobiliaria para profesionales: gestión de cartera de inmuebles con estado en tiempo real, contratos de arrendamiento y compraventa con alertas de vencimiento automáticas, transacciones de ingresos y gastos vinculadas a inmuebles, analítica financiera con informes y tendencias, propietarios y sociedades con historial de participaciones, gestión documental adjunta a cualquier registro y panel de control central.",
+  "featureList": [
+    "Gestión de inmuebles con estado y disponibilidad",
+    "Contratos de arrendamiento y compraventa con alertas de vencimiento",
+    "Transacciones: pagos, cobros y movimientos financieros",
+    "Analítica financiera con informes, tendencias e indicadores de rentabilidad",
+    "Propietarios y sociedades con historial de participaciones",
+    "Gestión documental: contratos, recibos, facturas y escrituras adjuntos a cualquier registro"
+  ],
+  "inLanguage": "es",
+  "author": { "@type": "Organization", "name": "Itranser — Informática de Transportes y Servicios, S.A.U.", "url": "https://www.itranser.com/" }
+}
+</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -41,6 +80,12 @@ nav .logo span{color:#fff;font-size:1.15rem;font-weight:700;letter-spacing:-.3px
 nav .links{display:flex;gap:28px;align-items:center}
 nav .links a{color:rgba(255,255,255,.8);font-size:.9rem;font-weight:500;transition:color .2s}
 nav .links a:hover{color:#fff}
+nav .nav-right{display:flex;align-items:center;gap:16px}
+nav .lang-switch{display:inline-flex;align-items:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);border-radius:999px;overflow:hidden;font-size:.75rem;font-weight:700}
+nav .lang-switch span,nav .lang-switch a{padding:4px 11px;letter-spacing:.5px}
+nav .lang-switch span{color:#93c5fd;background:rgba(59,130,246,.3)}
+nav .lang-switch a{color:rgba(255,255,255,.75);transition:color .2s,background .2s}
+nav .lang-switch a:hover{color:#fff;background:rgba(255,255,255,.1)}
 .btn{display:inline-flex;align-items:center;gap:6px;padding:10px 24px;border-radius:8px;font-weight:600;font-size:.95rem;transition:all .25s;cursor:pointer;border:none}
 .btn-primary{background:linear-gradient(135deg,var(--accent),#6366f1);color:#fff;position:relative;overflow:hidden}
 .btn-primary::after{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,255,255,.15) 0%,transparent 60%);opacity:0;transition:opacity .3s}
@@ -153,6 +198,12 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.6);padding:40px 24px;
       <a href="#contacto">Contacto</a>
       <a href="#contacto" class="btn btn-primary">Solicitar Demo</a>
     </div>
+    <div class="nav-right">
+      <div class="lang-switch" aria-label="Idioma">
+        <span aria-current="true">ES</span>
+        <a href="/en/inmudata/" hreflang="en" lang="en" rel="alternate">EN</a>
+      </div>
+    </div>
   </div>
 </nav>
 
@@ -168,7 +219,7 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.6);padding:40px 24px;
       </div>
     </div>
     <div class="mockup">
-      <img src="2026-04-16_inmudata-dashboard.png" alt="Dashboard Inmudata">
+      <img src="2026-04-16_inmudata-dashboard.png" alt="Panel de control de Inmudata con métricas de inmuebles, contratos y finanzas">
     </div>
   </div>
 </section>
@@ -243,7 +294,7 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.6);padding:40px 24px;
       <p>Visualiza de un vistazo todo lo importante: vencimientos, incidencias, disponibilidad y métricas clave.</p>
     </div>
     <div style="max-width:960px;margin:auto;border-radius:16px;overflow:hidden;box-shadow:0 16px 56px rgba(0,0,0,.2);border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.35);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transform:perspective(1500px) rotateY(-40deg) rotateX(3deg);transition:transform .6s ease-out" onmouseover="this.style.transform='perspective(1500px) rotateY(0deg) rotateX(0deg)'" onmouseout="this.style.transform='perspective(1500px) rotateY(-40deg) rotateX(3deg)'">
-      <img src="2026-04-16_inmudata-dashboard.png" alt="Dashboard Inmudata" style="width:100%">
+      <img src="2026-04-16_inmudata-dashboard.png" alt="Panel de control de Inmudata con vencimientos, incidencias y métricas clave" style="width:100%">
     </div>
   </div>
 </section>
@@ -269,7 +320,7 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.6);padding:40px 24px;
         </ul>
       </div>
       <div class="showcase-img">
-        <img src="2026-04-16_inmudata-properties.png" alt="Gestión de Inmuebles">
+        <img src="2026-04-16_inmudata-properties.png" alt="Vista de gestión de inmuebles de Inmudata con fichas y disponibilidad">
       </div>
     </div>
 
@@ -286,7 +337,7 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.6);padding:40px 24px;
         </ul>
       </div>
       <div class="showcase-img">
-        <img src="2026-04-16_inmudata-contracts.png" alt="Gestión de Contratos">
+        <img src="2026-04-16_inmudata-contracts.png" alt="Vista de gestión de contratos de Inmudata con alertas de vencimiento">
       </div>
     </div>
 
@@ -303,7 +354,7 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.6);padding:40px 24px;
         </ul>
       </div>
       <div class="showcase-img">
-        <img src="2026-04-16_inmudata-transactions.png" alt="Transacciones">
+        <img src="2026-04-16_inmudata-transactions.png" alt="Vista de transacciones de Inmudata con cobros y pagos categorizados">
       </div>
     </div>
 
@@ -320,7 +371,7 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.6);padding:40px 24px;
         </ul>
       </div>
       <div class="showcase-img">
-        <img src="2026-04-16_inmudata-financials.png" alt="Analítica Financiera">
+        <img src="2026-04-16_inmudata-financials.png" alt="Vista de analítica financiera de Inmudata con gráficos de tendencias e informes">
       </div>
     </div>
 
@@ -337,7 +388,7 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.6);padding:40px 24px;
         </ul>
       </div>
       <div class="showcase-img">
-        <img src="2026-04-16_inmudata-companies.png" alt="Propietarios y Sociedades">
+        <img src="2026-04-16_inmudata-companies.png" alt="Vista de propietarios y sociedades de Inmudata con participaciones">
       </div>
     </div>
   </div>
