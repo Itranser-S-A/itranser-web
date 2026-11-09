@@ -81,6 +81,8 @@ nav .links{display:flex;gap:28px;align-items:center}
 nav .links a{color:rgba(255,255,255,.8);font-size:.9rem;font-weight:500;transition:color .2s}
 nav .links a:hover{color:#fff}
 nav .nav-right{display:flex;align-items:center;gap:16px}
+nav .nav-right .home-link{color:rgba(255,255,255,.8);font-size:.85rem;font-weight:600;text-decoration:none;white-space:nowrap;transition:color .2s}
+nav .nav-right .home-link:hover{color:#fff}
 nav .lang-switch{display:inline-flex;align-items:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);border-radius:999px;overflow:hidden;font-size:.75rem;font-weight:700}
 nav .lang-switch span,nav .lang-switch a{padding:4px 11px;letter-spacing:.5px}
 nav .lang-switch span{color:#93c5fd;background:rgba(59,130,246,.3)}
@@ -187,7 +189,7 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.6);padding:40px 24px;
 <!-- NAV -->
 <nav>
   <div class="inner">
-    <a href="#" class="logo">
+    <a href="/" class="logo">
       <img src="2026-04-16_inmudata-logo.png" alt="Inmudata">
       <span>Inmudata</span>
     </a>
@@ -199,6 +201,7 @@ footer{background:var(--blue-dark);color:rgba(255,255,255,.6);padding:40px 24px;
       <a href="#contacto" class="btn btn-primary">Solicitar Demo</a>
     </div>
     <div class="nav-right">
+      <a href="/" class="home-link">← Inicio</a>
       <div class="lang-switch" aria-label="Idioma">
         <span aria-current="true">ES</span>
         <a href="/en/inmudata/" hreflang="en" lang="en" rel="alternate">EN</a>
