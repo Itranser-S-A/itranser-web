@@ -55,7 +55,7 @@ Core capabilities:
 6. **Document management.** Contracts, receipts, invoices, quotes and deeds attachable to any record (property, contract, transaction).
 7. **Central dashboard.** Expiries, incidents, availability and key metrics at a glance.
 
-Contact for demos: info@inmudata.com.
+Contact for demos: aherranz@itranser.com.
 
 ## Product: Glup-Glup (party games mobile app)
 
