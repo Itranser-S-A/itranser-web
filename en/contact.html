@@ -355,7 +355,7 @@
       body: JSON.stringify(payload)
     })
     .then(function (res) {
-      if (res.status === 201) { return Promise.resolve(); }
+      if (res.status === 200 || res.status === 201) { return Promise.resolve(); }
       if (res.status === 429) { throw new Error('rate'); }
       throw new Error('bad');
     })
