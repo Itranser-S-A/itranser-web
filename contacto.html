@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="google-site-verification" content="KlR23RMetZ2zNegHn8a3h_UUD_3PLDxKa7RjBF82U0Q" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Itranser | Cuéntanos tu proyecto</title>
+  <meta name="description" content="Contacta con Itranser: cuéntanos tu proyecto de software a medida (SelfStorage, Inmudata, apps móviles) y te respondemos sin compromiso.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.itranser.com/contacto.html">
+  <link rel="alternate" hreflang="es" href="https://www.itranser.com/contacto.html">
+  <link rel="alternate" hreflang="en" href="https://www.itranser.com/en/contact.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.itranser.com/contacto.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a2540'/%3E%3Ctext x='50' y='58' font-size='54' text-anchor='middle' fill='%23ffffff' font-family='Arial, Helvetica, sans-serif'%3EI%3C/text%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Itranser">
+  <meta property="og:title" content="Contacto — Itranser">
+  <meta property="og:description" content="Cuéntanos tu proyecto de software a medida y te respondemos sin compromiso.">
+  <meta property="og:url" content="https://www.itranser.com/contacto.html">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://www.itranser.com/assets/itranser-logo.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contacto — Itranser">
+  <meta name="twitter:description" content="Cuéntanos tu proyecto de software a medida y te respondemos sin compromiso.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+    :root {
+      --primary: #0891B2;
+      --primary-light: #22D3EE;
+      --secondary: #06B6D4;
+      --secondary-light: #67E8F9;
+      --accent: #0E7490;
+      --accent-light: #A5F3FC;
+      --dark: #0B0D17;
+      --darker: #060810;
+      --card-bg: rgba(255,255,255,0.03);
+      --card-border: rgba(255,255,255,0.06);
+      --text: #F1F5F9;
+      --text-muted: #94A3B8;
+      --glass-bg: rgba(255,255,255,0.05);
+      --glass-border: rgba(255,255,255,0.1);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--darker);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Animated gradient background */
+    .bg-mesh { position: fixed; inset: 0; z-index: -1; overflow: hidden; }
+    .bg-mesh .orb {
+      position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.35;
+      animation: float 12s ease-in-out infinite;
+    }
+    .bg-mesh .orb:nth-child(1) { width: 500px; height: 500px; background: var(--primary); top: -15%; left: -10%; }
+    .bg-mesh .orb:nth-child(2) { width: 400px; height: 400px; background: var(--secondary); bottom: -10%; right: -10%; animation-delay: -4s; }
+    .bg-mesh .orb:nth-child(3) { width: 300px; height: 300px; background: var(--accent); top: 40%; left: 55%; animation-delay: -8s; }
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(30px, -30px) scale(1.05); }
+    }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 5%;
+      background: rgba(6, 8, 16, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--card-border);
+    }
+    nav .logo img { height: 34px; display: block; }
+    nav .links { display: flex; align-items: center; gap: 2rem; }
+    nav .links a { color: var(--text-muted); text-decoration: none; font-size: .92rem; font-weight: 500; transition: color .2s; }
+    nav .links a:hover { color: var(--text); }
+    nav .lang-switch {
+      display: flex; gap: .5rem; font-size: .85rem; font-weight: 600;
+      border: 1px solid var(--glass-border); border-radius: 8px; padding: .25rem .6rem;
+    }
+    nav .lang-switch span { color: var(--primary-light); }
+    nav .lang-switch a { color: var(--text-muted); text-decoration: none; }
+    nav .lang-switch a:hover { color: var(--text); }
+
+    main { flex: 1; width: 100%; max-width: 760px; margin: 0 auto; padding: 8rem 1.5rem 4rem; }
+
+    .page-head { text-align: center; margin-bottom: 2.5rem; }
+    .overline {
+      display: inline-block; font-size: .8rem; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--primary-light); margin-bottom: .75rem;
+    }
+    h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.2; letter-spacing: -.02em; }
+    .page-head p { color: var(--text-muted); margin-top: .75rem; font-size: 1.05rem; }
+    .gradient {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    }
+
+    .glass-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      backdrop-filter: blur(16px);
+      padding: 2.5rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    .field-full { grid-column: 1 / -1; }
+
+    label { display: block; font-size: .88rem; font-weight: 600; margin-bottom: .4rem; }
+    label .optional { color: var(--text-muted); font-weight: 400; font-size: .8rem; }
+
+    input[type="text"], input[type="email"], input[type="tel"], textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--glass-border);
+      border-radius: 10px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: .95rem;
+      padding: .8rem 1rem;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.18);
+    }
+    input::placeholder, textarea::placeholder { color: rgba(148, 163, 184, 0.6); }
+    textarea { min-height: 140px; resize: vertical; }
+
+    fieldset { border: none; margin: 0; padding: 0; }
+    fieldset legend { font-size: .88rem; font-weight: 600; margin-bottom: .6rem; }
+    .interest-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .6rem; }
+    .interest-option {
+      display: flex; align-items: center; gap: .6rem;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: .65rem .9rem;
+      cursor: pointer;
+      font-size: .9rem;
+      transition: border-color .2s, background .2s;
+    }
+    .interest-option:hover { border-color: var(--glass-border); background: rgba(255,255,255,0.05); }
+    .interest-option.checked { border-color: var(--primary); background: rgba(8, 145, 178, 0.12); }
+    .interest-option input { accent-color: var(--primary); width: 16px; height: 16px; flex-shrink: 0; }
+
+    .consent-row { display: flex; align-items: flex-start; gap: .65rem; margin-top: 1.25rem; font-size: .88rem; color: var(--text-muted); }
+    .consent-row input { accent-color: var(--primary); width: 16px; height: 16px; margin-top: .3rem; flex-shrink: 0; }
+    .consent-row a { color: var(--secondary-light); }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+      width: 100%; margin-top: 1.5rem;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: #fff; text-decoration: none; border: none; cursor: pointer;
+      font-family: inherit; font-size: 1rem; font-weight: 700;
+      padding: .95rem 2rem; border-radius: 12px;
+      transition: transform .2s, box-shadow .2s, opacity .2s;
+      box-shadow: 0 4px 20px rgba(8, 145, 178, 0.35);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(8, 145, 178, 0.45); }
+    .btn-primary:disabled { opacity: .6; cursor: not-allowed; transform: none; }
+
+    .form-status { margin-top: 1.25rem; padding: .9rem 1.1rem; border-radius: 10px; font-size: .92rem; display: none; }
+    .form-status.ok { display: block; background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.35); color: #6EE7B7; }
+    .form-status.err { display: block; background: rgba(244, 63, 94, 0.1); border: 1px solid rgba(244, 63, 94, 0.35); color: #FDA4AF; }
+
+    .rgpd-note { margin-top: 1.5rem; font-size: .82rem; color: var(--text-muted); line-height: 1.6; }
+    .rgpd-note a { color: var(--secondary-light); }
+
+    .back-home { display: inline-block; margin-top: 2rem; color: var(--text-muted); text-decoration: none; font-size: .9rem; }
+    .back-home:hover { color: var(--primary-light); }
+
+    footer {
+      text-align: center; padding: 2rem 1.5rem; margin-top: auto;
+      border-top: 1px solid var(--card-border);
+      font-size: .85rem; color: var(--text-muted);
+    }
+    footer a { color: var(--text-muted); text-decoration: none; }
+    footer a:hover { color: var(--primary-light); }
+
+    @media (max-width: 640px) {
+      nav { padding: .8rem 1.25rem; }
+      nav .links { gap: 1rem; }
+      nav .links a:not(.lang-switch a) { display: none; }
+      .glass-card { padding: 1.5rem; }
+      .form-grid { grid-template-columns: 1fr; }
+      .interest-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="bg-mesh">
+  <div class="orb"></div>
+  <div class="orb"></div>
+  <div class="orb"></div>
+</div>
+
+<nav>
+  <a href="/" class="logo" aria-label="Itranser — Inicio"><img src="/assets/itranser-logo.png" alt="Itranser"></a>
+  <div class="links">
+    <a href="/">Inicio</a>
+    <a href="/contacto.html" aria-current="page">Contacto</a>
+    <div class="lang-switch" aria-label="Idioma">
+      <span aria-current="true">ES</span>
+      <a href="/en/contact.html" hreflang="en" lang="en" rel="alternate">EN</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="page-head">
+    <span class="overline">Contacto</span>
+    <h1>¿Tienes un proyecto<br><span class="gradient">en mente?</span></h1>
+    <p>Cuéntanoslo y te respondemos sin compromiso. Sin letras pequeñas.</p>
+  </div>
+
+  <div class="glass-card">
+    <form id="contact-form" novalidate>
+      <div class="form-grid">
+        <div>
+          <label for="f-nombre">Nombre *</label>
+          <input type="text" id="f-nombre" name="nombre" required minlength="2" autocomplete="name" placeholder="Tu nombre">
+        </div>
+        <div>
+          <label for="f-telefono">Teléfono <span class="optional">(opcional)</span></label>
+          <input type="tel" id="f-telefono" name="telefono" autocomplete="tel" placeholder="600 000 000">
+        </div>
+        <div class="field-full">
+          <label for="f-email">Email *</label>
+          <input type="email" id="f-email" name="email" required autocomplete="email" placeholder="tu@email.com">
+        </div>
+        <div class="field-full">
+          <label for="f-mensaje">Mensaje *</label>
+          <textarea id="f-mensaje" name="mensaje" required minlength="5" maxlength="3000" placeholder="¿Qué información deseas recibir?"></textarea>
+        </div>
+        <div class="field-full">
+          <fieldset>
+            <legend>Me interesa <span class="optional">(opcional)</span></legend>
+            <div class="interest-grid" id="interest-grid">
+              <label class="interest-option"><input type="checkbox" name="interes" value="selfstorage"> SelfStorage</label>
+              <label class="interest-option"><input type="checkbox" name="interes" value="inmudata"> Inmudata</label>
+              <label class="interest-option"><input type="checkbox" name="interes" value="glup-glup"> Glup-Glup</label>
+              <label class="interest-option"><input type="checkbox" name="interes" value="otro"> Otro</label>
+            </div>
+          </fieldset>
+        </div>
+        <!-- Honeypot anti-spam: oculto con CSS, no con type=hidden -->
+        <div class="field-full" style="position:absolute; left:-9999px; top:-9999px;" aria-hidden="true">
+          <label for="f-web">Web</label>
+          <input type="text" id="f-web" name="web_url" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="field-full">
+          <div class="consent-row">
+            <input type="checkbox" id="f-consent" name="consent" required>
+            <label for="f-consent" style="margin:0; font-weight:400;">He leído y acepto la <a href="/politica-privacidad.html">Política de Privacidad</a>. *</label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn-primary" id="f-submit">Enviar mensaje ✉️</button>
+      <div class="form-status" id="f-status" role="status" aria-live="polite"></div>
+      <p class="rgpd-note">
+        Solo usaremos tus datos para atender tu solicitud: no se emplearán para publicidad ni comunicaciones comerciales y se eliminarán una vez atendido tu mensaje. Más detalles en nuestra <a href="/politica-privacidad.html">Política de Privacidad</a>.
+      </p>
+    </form>
+  </div>
+
+  <a href="/" class="back-home">← Volver al inicio</a>
+</main>
+
+<footer>
+  <p>© 2026 Informática de Transportes y Servicios, S.A.U. — Todos los derechos reservados.</p>
+  <p style="margin-top:0.5rem;"><a href="/politica-privacidad.html">Política de Privacidad</a> · <a href="/politica-cookies.html">Política de Cookies</a> · <a href="/aviso-legal.html">Aviso legal</a></p>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  var form = document.getElementById('contact-form');
+  var status = document.getElementById('f-status');
+  var submitBtn = document.getElementById('f-submit');
+  var VALID_INTEREST = ['selfstorage', 'inmudata', 'glup-glup', 'otro'];
+
+  // Estilo visual de los checkboxes de interés (clase .checked)
+  document.querySelectorAll('#interest-grid input[type="checkbox"]').forEach(function (cb) {
+    cb.addEventListener('change', function () {
+      cb.closest('.interest-option').classList.toggle('checked', cb.checked);
+    });
+  });
+
+  // Preselección desde landings: contacto.html?interes=selfstorage
+  try {
+    var param = new URLSearchParams(window.location.search).get('interes');
+    if (param && VALID_INTEREST.indexOf(param) !== -1) {
+      var cb = document.querySelector('#interest-grid input[value="' + param + '"]');
+      if (cb) { cb.checked = true; cb.closest('.interest-option').classList.add('checked'); }
+    }
+  } catch (e) { /* URLSearchParams no disponible: sin preselección */ }
+
+  function show(type, msg) {
+    status.className = 'form-status ' + type;
+    status.textContent = msg;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    status.className = 'form-status';
+
+    if (!form.checkValidity() || !document.getElementById('f-consent').checked) {
+      form.reportValidity();
+      show('err', 'Revisa los campos marcados.');
+      return;
+    }
+
+    // Honeypot relleno = bot: fingir éxito y no enviar
+    if (document.getElementById('f-web').value) {
+      form.reset();
+      show('ok', '¡Gracias por escribirnos! Te responderemos lo antes posible.');
+      return;
+    }
+
+    var interes = Array.prototype.slice.call(document.querySelectorAll('#interest-grid input[type="checkbox"]:checked'))
+      .map(function (cb) { return cb.value; })
+      .filter(function (v) { return VALID_INTEREST.indexOf(v) !== -1; });
+
+    var payload = {
+      nombre: document.getElementById('f-nombre').value.trim(),
+      telefono: document.getElementById('f-telefono').value.trim(),
+      email: document.getElementById('f-email').value.trim(),
+      mensaje: document.getElementById('f-mensaje').value.trim(),
+      web_url: '',
+      consent: true
+    };
+    if (interes.length) { payload.interes = interes; }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando…';
+
+    fetch('https://webforms.pockethost.io/api/collections/mensajes_contacto/records', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+    .then(function (res) {
+      if (res.status === 201) { return Promise.resolve(); }
+      if (res.status === 429) { throw new Error('rate'); }
+      throw new Error('bad');
+    })
+    .then(function () {
+      form.reset();
+      document.querySelectorAll('#interest-grid .interest-option.checked').forEach(function (el) {
+        el.classList.remove('checked');
+      });
+      show('ok', '¡Gracias por escribirnos! Hemos recibido tu mensaje y te responderemos lo antes posible.');
+    })
+    .catch(function (err) {
+      if (err && err.message === 'rate') {
+        show('err', 'Has enviado demasiados mensajes, inténtalo más tarde.');
+      } else {
+        show('err', 'Revisa los campos. Si el problema persiste, inténtalo de nuevo en unos minutos.');
+      }
+    })
+    .then(function () {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Enviar mensaje ✉️';
+    });
+  });
+})();
+</script>
+
+<!-- Cookie consent banner (RGPD) -->
+<div id="cookie-banner" role="region" aria-label="Aviso de cookies" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:99999;background:#0B0D17;box-shadow:0 -4px 24px rgba(0,0,0,.35);padding:14px 20px;">
+  <div style="max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+    <p style="flex:1;min-width:240px;margin:0;font-size:.85rem;line-height:1.5;color:#F1F5F9;">🍪 Utilizamos exclusivamente cookies y almacenamiento local de carácter técnico (guardar tu elección sobre este aviso). No usamos cookies de seguimiento, analítica ni publicidad. <a href="/politica-cookies.html" style="color:#67E8F9;text-decoration:underline;">Más información</a></p>
+    <div style="display:flex;gap:10px;flex-shrink:0;">
+      <button type="button" id="cookie-accept" style="background:#0891B2;color:#fff;border:none;padding:9px 20px;border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600;white-space:nowrap;">Aceptar</button>
+      <button type="button" id="cookie-reject" style="background:transparent;color:#94A3B8;border:1px solid rgba(148,163,184,.35);padding:9px 20px;border-radius:6px;cursor:pointer;font-size:.85rem;font-weight:600;white-space:nowrap;">Rechazar</button>
+    </div>
+  </div>
+</div>
+<script>
+(function () {
+  var b = document.getElementById('cookie-banner');
+  function stored(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  if (!stored('cookieConsent') && !stored('cookies_accepted')) { b.style.display = 'block'; }
+  function decide(v) {
+    try { localStorage.setItem('cookieConsent', v); } catch (e) {}
+    b.style.display = 'none';
+  }
+  document.getElementById('cookie-accept').addEventListener('click', function () { decide('accepted'); });
+  document.getElementById('cookie-reject').addEventListener('click', function () { decide('rejected'); });
+})();
+</script>
+
+</body>
+</html>
